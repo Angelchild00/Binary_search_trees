@@ -15,6 +15,7 @@ int main (){
     printf("Inorder Traversal sorted: ");
     traverseTree(root);
     printf("\n");
+    printf("Number of nodes in tree is: %d\n",countNode(root));
 
     return 0;
 }

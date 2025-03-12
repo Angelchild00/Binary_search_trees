@@ -39,7 +39,10 @@ if(targetNode < root->data){
     return searchNode(root->pRight, targetNode);
 }
 int countNode(TreeNode* root){
-
+if (root == NULL){
+    return 0;
+}
+return 1 + countNode(root->pLeft) + countNode(root->pRight);
 }
 int treeHeight(TreeNode* root){
 
