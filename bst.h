@@ -15,5 +15,6 @@ TreeNode* searchNode(TreeNode* root, char targetNode);
 int countNode(TreeNode* root);
 int treeHeight(TreeNode* root);
 void traverseTree(TreeNode* root);
+void freeTree(TreeNode* root);
 
 #endif //BST_H

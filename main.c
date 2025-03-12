@@ -18,5 +18,8 @@ int main (){
     printf("Number of nodes in tree is: %d\n",countNode(root));
     printf("Tree Height is: %d\n", treeHeight(root));
 
+    freeTree(root);
+    printf("Memory free. Program complete\n");
+
     return 0;
 }

@@ -64,3 +64,11 @@ printf("%c", root->data);
 traverseTree(root->pRight);
 return;
 }
+void freeTree(TreeNode* root){
+    if (root == NULL){
+        return;
+    }
+    freeTree(root->pLeft);
+    freeTree(root->pRight);
+    free(root);
+}
