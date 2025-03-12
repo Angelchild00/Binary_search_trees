@@ -1,5 +1,5 @@
 #include "bst.h"
-#include <stdlib.h>
+
 
 TreeNode* insertNode (TreeNode* root, char data){
 if (root == NULL){
@@ -34,5 +34,11 @@ int treeHeight(TreeNode* root){
 
 }
 void traverseTree(TreeNode* root){
-
+if(root == NULL){
+    return;
+}
+traverseTree(root->pLeft);
+printf("%c", root->data);
+traverseTree(root->pRight);
+return;
 }
