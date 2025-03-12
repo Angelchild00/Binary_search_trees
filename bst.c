@@ -3,7 +3,7 @@
 
 TreeNode* insertNode (TreeNode* root, char data){
 if(searchNode(root, data) != NULL){
-    printf("duplicate value found, '%c' not inserted\n", data);
+    printf("\nDuplicate value found, '%c' not inserted\n", data);
     return root; 
 }
 if (root == NULL){
