@@ -1,5 +1,5 @@
 #include "bst.h"
-
+#include <stdio.h>
 
 TreeNode* insertNode (TreeNode* root, char data){
 if (root == NULL){

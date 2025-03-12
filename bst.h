@@ -3,14 +3,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct TreeNode
+typedef struct TreeNode
 {
     char data;
     struct TreeNode* pLeft;
     struct TreeNode* pRight;
 } TreeNode;
-
-
 
 TreeNode* insertNode (TreeNode* root, char data);
 TreeNode* searchNode(TreeNode* root, char targetNode);
