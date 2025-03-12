@@ -2,12 +2,17 @@
 #include <stdio.h>
 
 TreeNode* insertNode (TreeNode* root, char data){
+if(searchNode(root, data) != NULL){
+    printf("duplicate value found, '%c' not inserted\n", data);
+    return root; 
+}
 if (root == NULL){
     TreeNode* newNode = (TreeNode*)malloc(sizeof(TreeNode));
 if(!newNode){
     printf("Memory Allocation failed\n");
     return NULL;
 }
+
 newNode->data = data;
 newNode->pLeft = NULL;
 newNode->pRight = NULL;
@@ -25,7 +30,13 @@ return root;
 
 
 TreeNode* searchNode(TreeNode* root, char targetNode){
+if(root == NULL || root->data == targetNode)
+    return root;
 
+if(targetNode < root->data){
+    return searchNode(root->pLeft, targetNode);
+}
+    return searchNode(root->pRight, targetNode);
 }
 int countNode(TreeNode* root){
 
