@@ -6,14 +6,18 @@ int main (){
     TreeNode* root = NULL;
     srand(time(NULL));
     int numChars = (rand() %10 ) + 11;
+    char charsArray[numChars];
 
     printf("inserting %d random chars\n", numChars);
     for (int i =0; i < numChars; i++){
-        char randomChar = getRandomChar();
-        printf("%c", randomChar);
-        root = insertNode(root, randomChar);
+        charsArray[i] = getRandomChar();
+        printf("%c", charsArray[i]);
     }
     printf("\n");
+    for (int i = 0; i < numChars; i++){
+        root = insertNode(root, charsArray[i]);
+    }
+
     printf("Inorder Traversal sorted: ");
     traverseTree(root);
     printf("\n");
