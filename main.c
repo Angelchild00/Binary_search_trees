@@ -9,7 +9,7 @@ int main (){
 
     printf("inserting %d random chars\n", numChars);
     for (int i =0; i < numChars; i++){
-        char randomChar = getRandomChar;
+        char randomChar = getRandomChar();
         printf("%c", randomChar);
         root = insertNode(root, randomChar);
     }
