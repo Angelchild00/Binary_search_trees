@@ -16,5 +16,6 @@ int countNode(TreeNode* root);
 int treeHeight(TreeNode* root);
 void traverseTree(TreeNode* root);
 void freeTree(TreeNode* root);
+char getRandomChar(void);
 
 #endif //BST_H

@@ -1,17 +1,19 @@
 #include "bst.h"
+#include <time.h>
+
 
 int main (){
     TreeNode* root = NULL;
+    srand(time(NULL));
+    int numChars = (rand() %10 ) + 11;
 
-    root = insertNode(root, 'm');
-    root = insertNode(root, 'd');
-    root = insertNode(root, 'e');
-    root = insertNode(root, 'r');
-    root = insertNode(root, 'g');
-    root = insertNode(root, 'm');
-    root = insertNode(root, 'l');
-    root = insertNode(root, 'k');
-
+    printf("inserting %d random chars\n", numChars);
+    for (int i =0; i < numChars; i++){
+        char randomChar = getRandomChar;
+        printf("%c", randomChar);
+        root = insertNode(root, randomChar);
+    }
+    printf("\n");
     printf("Inorder Traversal sorted: ");
     traverseTree(root);
     printf("\n");

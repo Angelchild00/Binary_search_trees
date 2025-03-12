@@ -72,3 +72,6 @@ void freeTree(TreeNode* root){
     freeTree(root->pRight);
     free(root);
 }
+char getRandomChar(void){
+    return 'a' + (rand() % 26);
+}
