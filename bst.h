@@ -10,12 +10,12 @@ typedef struct TreeNode
     struct TreeNode* pRight;
 } TreeNode;
 
-TreeNode* insertNode (TreeNode* root, char data);
-TreeNode* searchNode(TreeNode* root, char targetNode);
-int countNode(TreeNode* root);
-int treeHeight(TreeNode* root);
-void traverseTree(TreeNode* root);
-void freeTree(TreeNode* root);
-char getRandomChar(void);
+TreeNode* insertNode (TreeNode* root, char data); //add node
+TreeNode* searchNode(TreeNode* root, char targetNode); //search for specific node
+int countNode(TreeNode* root); //count number of nodes
+int treeHeight(TreeNode* root); //count tree height
+void traverseTree(TreeNode* root); // inorder traverse tree
+void freeTree(TreeNode* root); //free memory
+char getRandomChar(void); //get random chars
 
 #endif //BST_H
