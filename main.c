@@ -16,6 +16,7 @@ int main (){
     traverseTree(root);
     printf("\n");
     printf("Number of nodes in tree is: %d\n",countNode(root));
+    printf("Tree Height is: %d\n", treeHeight(root));
 
     return 0;
 }

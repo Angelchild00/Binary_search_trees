@@ -45,7 +45,15 @@ if (root == NULL){
 return 1 + countNode(root->pLeft) + countNode(root->pRight);
 }
 int treeHeight(TreeNode* root){
-
+if (root == NULL){
+    return -1;
+}
+int leftHeight = treeHeight(root->pLeft);
+int rightHeight = treeHeight(root->pRight);
+if (leftHeight > rightHeight){
+    return (leftHeight + 1);
+}
+    return (rightHeight + 1);
 }
 void traverseTree(TreeNode* root){
 if(root == NULL){
