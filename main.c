@@ -8,7 +8,7 @@ int main (){
     root = insertNode(root, 'e');
     root = insertNode(root, 'r');
     root = insertNode(root, 'g');
-    root = insertNode(root, 'f');
+    root = insertNode(root, 'm');
     root = insertNode(root, 'l');
     root = insertNode(root, 'k');
 
