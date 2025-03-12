@@ -11,7 +11,7 @@ struct TreeNode
 
 
 
-void insertNode (TreeNode** root, char node);
+TreeNode* insertNode (TreeNode* root, char data);
 TreeNode* searchNode(TreeNode* root, char targetNode);
 int countNode(TreeNode* root);
 int treeHeight(TreeNode* root);
